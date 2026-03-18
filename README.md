@@ -71,11 +71,14 @@ Grafik pergerakan Loss dan Accuracy di bawah ini menunjukkan bahwa model berhasi
 
 <img width="830" height="337" alt="image" src="https://github.com/user-attachments/assets/8451499f-6df0-4370-b16c-208a4563b7f5" />
 
-
-## 📂 Kaggle Submission
-Model CNN 1D terbaik telah digunakan untuk memprediksi dataset buta `test_tweets.csv` dari Kaggle. Hasil tebakan AI telah digabungkan ke dalam format `submission_FINAL_cnn1d_v2.csv` yang siap untuk dievaluasi.
-
 ## 🛠️ Cara Menggunakan (Reproducibility)
 Model otak AI dan kamus (*Tokenizer*) telah diekspor agar dapat digunakan langsung pada aplikasi atau *website* tanpa perlu *training* ulang.
 1. `model_lstm_hatespeech.keras` -> Arsitektur dan bobot AI yang sudah dilatih. *(Note: Sesuaikan nama file jika kamu menyimpannya dengan nama cnn1d)*
 2. `tokenizer_hatespeech.pickle` -> Kamus konversi kata ke representasi angka.
+
+### 💻 Instalasi (Reproducibility)
+Jika Anda ingin menjalankan ulang *notebook* ini di *local environment*, pastikan Anda sudah menginstal seluruh *dependencies* yang dibutuhkan.
+
+Buka terminal dan jalankan perintah berikut:
+```bash
+pip install -r requirements.txt
