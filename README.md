@@ -23,7 +23,10 @@ Melalui analisis ekstraksi teks (*Wordcloud*), ditemukan kontras yang sangat kua
 * **Kelas Target (Label 1):** Didominasi oleh kata kunci berkonteks identitas dan SARA seperti `racist`, `white`, `black`, `hate`, dan `allahsoil`.
 * **Kelas Mayoritas (Label 0):** Didominasi oleh sentimen kehidupan sehari-hari seperti `love`, `happy`, `day`, dan `smile`.
 
-*(Tambahkan Gambar Wordcloud kamu di sini)*
+**WORDCLOUD HATE SPEECH**
+<img width="859" height="683" alt="image" src="https://github.com/user-attachments/assets/70557ea8-e4c8-4345-b1d1-e90d9fc71348" />
+<img width="822" height="667" alt="image" src="https://github.com/user-attachments/assets/b268002e-a818-4303-bcbb-c047f27a5d64" />
+
 
 ## 🔬 Model Benchmarking (Eksperimen Bertahap)
 Dataset ini memiliki tantangan berupa kelas yang sangat tidak seimbang (*highly imbalanced*), di mana Label 1 (Hate Speech) hanya berjumlah sekitar 7%. Oleh karena itu, metrik evaluasi utama yang diincar adalah **F1-Score** pada kelas minoritas.
@@ -61,15 +64,16 @@ Setelah dilakukan *tuning*, arsitektur **CNN 1D** secara mengejutkan keluar seba
 * Akurasi Global: **94.49%**
 * Precision: **0.59**
 * Recall: **0.71**
-* **F1-Score:** **0.65** 🚀 *(Peningkatan signifikan dari baseline ML Klasik)*
+* **F1-Score:** **0.65** *(Peningkatan signifikan dari baseline ML Klasik)*
 
 ### 📈 Grafik Learning Curve (CNN 1D)
 Grafik pergerakan Loss dan Accuracy di bawah ini menunjukkan bahwa model berhasil belajar dengan sangat baik (*textbook perfect U-shape curve pada Validation Loss*) sebelum diselamatkan oleh *Early Stopping* di Epoch ke-4.
 
-*(Tambahkan Screenshot Grafik Learning Curve Loss & Accuracy CNN 1D di sini)*
+<img width="830" height="337" alt="image" src="https://github.com/user-attachments/assets/8451499f-6df0-4370-b16c-208a4563b7f5" />
+
 
 ## 📂 Kaggle Submission
-Model CNN 1D terbaik telah digunakan untuk memprediksi dataset buta `test_tweets.csv` dari Kaggle. Hasil tebakan AI telah digabungkan ke dalam format `submission_FINAL_cnn1d_v2.csv` yang siap untuk dievaluasi pada *Leaderboard* Kaggle.
+Model CNN 1D terbaik telah digunakan untuk memprediksi dataset buta `test_tweets.csv` dari Kaggle. Hasil tebakan AI telah digabungkan ke dalam format `submission_FINAL_cnn1d_v2.csv` yang siap untuk dievaluasi.
 
 ## 🛠️ Cara Menggunakan (Reproducibility)
 Model otak AI dan kamus (*Tokenizer*) telah diekspor agar dapat digunakan langsung pada aplikasi atau *website* tanpa perlu *training* ulang.
